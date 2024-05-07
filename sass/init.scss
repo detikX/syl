@@ -4,7 +4,7 @@
 
 // $colorred: #560418;
 // $colorred: #7b2031; //jurno
-$colorred: #ab3138;
+$colorred: #cccccc;
 
 .preload {
     // font-family: "Noto Serif JP", sans-serif;
@@ -133,7 +133,7 @@ section {
     p,
     li {
         font-size: 1.3rem;
-        color: #fff;
+        color: #333;
         @media screen and (max-width: 768px) {
             font-size: 1.2rem;
         }
