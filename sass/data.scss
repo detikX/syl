@@ -1,0 +1,19 @@
+.data {
+    .syl-img {
+        position: absolute;
+        bottom: 0;
+        width:50%;
+        height: auto;
+        left: 50%;
+        transform: translate(-50%,0%);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }        
+    }
+
+    .mb-80 {
+        margin-bottom: 50vh;
+    }
+}
