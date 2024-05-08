@@ -23,3 +23,30 @@
         margin-bottom: 50vh;
     }
 }
+
+.lihat-naskah {
+    a {
+        color: white;
+        &:hover {
+            text-decoration: none;
+
+        }
+    }
+    background: $colorred;
+    .imgx {
+        width: 200px;
+        height: auto;
+        display: inline-block;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+
+    .judulx {
+        display: inline-block;
+        margin-left: 16px;
+    }
+}
