@@ -1,13 +1,16 @@
 .data {
+    // background: #009688;
+    // background: #4caf50;
     .syl-img {
         position: absolute;
         bottom: 0;
-        width: 50%;
+        width: 40%;
         height: auto;
         left: 50%;
         transform: translate(-50%, 0%);
         @media screen and (max-width: 768px) {
             width: 100%;
+            transform: translate(-50%, -50%);
         }
         img {
             width: 100%;
