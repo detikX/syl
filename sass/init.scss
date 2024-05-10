@@ -292,7 +292,7 @@ h5 {
     margin-top: 8px;
     // background: linear-gradient(to top, rgba($colorred, 0.5), rgba($colorred, 0.2));
     border-radius: 16px;
-    background: rgba(orange,.8);
+    background: rgba(orange, 0.9);
     // background: rgba(silver, 0.6);
     margin-bottom: 16px;
     // background: linear-gradient(to top, #e5e5e5, transparent);
@@ -305,6 +305,7 @@ h5 {
         p {
             margin-bottom: 0;
             // font-size: 1rem;
+            // color: white;
         }
     }
 }
@@ -337,9 +338,9 @@ section {
 }
 .share_icon {
     color: white !important;
-    >a {
+    > a {
         padding: 2px 0 !important;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             padding: 0 !important;
             width: 28px;
             height: 28px;
