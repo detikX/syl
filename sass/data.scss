@@ -44,6 +44,8 @@
 
 .lihat-naskah {
     background: #7fce82;
+    position: relative;
+    z-index: 10;
     a  {
         color: white !important;
         div {
