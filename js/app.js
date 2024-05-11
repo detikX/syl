@@ -14,7 +14,7 @@ function initTimeline() {
         start: 'top top',
         toggleClass: 'started',
         pin: true,
-        markers: true,
+        markers: false,
         end: () => "+=" + ((sections.length - 1) * vh(80)),
     });
 
@@ -47,7 +47,7 @@ function initTimeline() {
             // animate IN the new section (if there is one)
             if (section) {
                 tl.to(section.querySelector("h2"), {
-                    fontSize: "3.5rem",
+                    fontSize: "3rem",
                 }, 0);
                 tl.to(section, {
                     maxHeight: "90vh"
@@ -67,7 +67,7 @@ function initTimeline() {
         ScrollTrigger.create({
             start: () => parentST.start + i * window.innerHeight * 0.4,
             end: () => "+=" + window.innerHeight * 0.4,
-            markers: true,
+            markers: false,
             onLeaveBack: () => i || goto(null, 0),
             onToggle: self => self.isActive && goto(sct, sct_index)
         });
