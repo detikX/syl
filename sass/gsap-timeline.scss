@@ -5,7 +5,8 @@
     width: 100vw;
     overflow: hidden;
     height: 100vh;
-    background: #232323;
+    // background: #232323;
+    background: #7fce82;
 }
 .test {
     padding-top: 200px;
@@ -22,7 +23,7 @@
 .timeline-container article {
     position: relative;
     z-index: 1000;
-    color: white;
+    // color: white;
     text-align: center;
 
     display: flex;
@@ -44,7 +45,7 @@
     height: 100vh;
     max-height: 3rem;
     position: relative;
-    color: white;
+    // color: white;
     text-align: center;
 }
 
