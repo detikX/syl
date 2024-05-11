@@ -32,7 +32,7 @@ function initTimeline() {
             // animate OUT the current section (if there is one)
             if (currentSection) {
                 tl.to(currentSection.querySelector("h2"), {
-                    fontSize: "3rem",
+                    fontSize: "2rem",
                 });
                 tl.to(currentSection, {
                     maxHeight: "3rem"
@@ -47,7 +47,7 @@ function initTimeline() {
             // animate IN the new section (if there is one)
             if (section) {
                 tl.to(section.querySelector("h2"), {
-                    fontSize: "2rem",
+                    fontSize: "3.5rem",
                 }, 0);
                 tl.to(section, {
                     maxHeight: "80vh"
@@ -69,7 +69,7 @@ function initTimeline() {
         ScrollTrigger.create({
             start: () => parentST.start + i * window.innerHeight * 0.4,
             end: () => "+=" + window.innerHeight * 0.4,
-            markers: false,
+            markers: true,
             //onLeaveBack: () => i || goto(null, 0),
             onToggle: self => self.isActive && goto(sct, sct_index)
         });
