@@ -1,3 +1,21 @@
 .pembukaan {
    min-height: auto;
+   background: #eef4ed;
+   padding: 32px 0 100px;
+   .daunx {
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+      width: auto;
+      height: 50%;
+      @media screen and (max-width: 768px) {
+         left: 5%;
+         height: 20%;
+      }
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
 }

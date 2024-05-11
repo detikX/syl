@@ -43,13 +43,16 @@
 }
 
 .lihat-naskah {
+    background: #7fce82;
     a  {
-        color: white;
+        color: white !important;
+        div {
+        }
         &:hover {
             text-decoration: none;
         }
     }
-    background: $colorred;
+
     .imgx {
         width: 200px;
         height: auto;
@@ -62,7 +65,9 @@
     }
 
     .judulx {
+        color: black !important;
         display: inline-block;
+        text-decoration: underline;
         // margin-left: 16px;
     }
 }
