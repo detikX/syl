@@ -40,6 +40,9 @@
     // float: right;
     position: absolute;
     right: 0;
+    @media screen and (max-width: 768px) {
+        width: 75%;
+    }
 }
 
 .lihat-naskah {
