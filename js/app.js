@@ -32,7 +32,7 @@ function initTimeline() {
             // animate OUT the current section (if there is one)
             if (currentSection) {
                 tl.to(currentSection.querySelector("h2"), {
-                    fontSize: "2rem",
+                    fontSize: "3rem",
                 });
                 tl.to(currentSection, {
                     maxHeight: "3rem"
@@ -47,10 +47,10 @@ function initTimeline() {
             // animate IN the new section (if there is one)
             if (section) {
                 tl.to(section.querySelector("h2"), {
-                    fontSize: "3rem",
+                    fontSize: "2rem",
                 }, 0);
                 tl.to(section, {
-                    maxHeight: "90vh"
+                    maxHeight: "80vh"
                 }, 0);
                 tl.fromTo(section.querySelectorAll("p"), { maxHeight: "0%" }, {
                     opacity: 1,
@@ -63,12 +63,14 @@ function initTimeline() {
 
     sections.forEach((sct, i) => {
         let sct_index = sct.getAttribute('data-count');
-
+        if (i === 0) {
+            goto(sct, sct_index);
+        }
         ScrollTrigger.create({
             start: () => parentST.start + i * window.innerHeight * 0.4,
             end: () => "+=" + window.innerHeight * 0.4,
             markers: false,
-            onLeaveBack: () => i || goto(null, 0),
+            //onLeaveBack: () => i || goto(null, 0),
             onToggle: self => self.isActive && goto(sct, sct_index)
         });
     });
