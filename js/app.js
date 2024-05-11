@@ -47,10 +47,10 @@ function initTimeline() {
             // animate IN the new section (if there is one)
             if (section) {
                 tl.to(section.querySelector("h2"), {
-                    fontSize: "4rem",
+                    fontSize: "3.5rem",
                 }, 0);
                 tl.to(section, {
-                    maxHeight: "80vh"
+                    maxHeight: "90vh"
                 }, 0);
                 tl.fromTo(section.querySelectorAll("p"), { maxHeight: "0%" }, {
                     opacity: 1,
