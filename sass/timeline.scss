@@ -156,7 +156,7 @@
         // color: #ff0;
         // background-color: #FF0;
         // background: #3a2c11;
-        background-color: #ae0404;
+        background-color: #ffb300;
         // border: 3px solid #ae0404;
         position: relative;
         .tembakan {
@@ -183,7 +183,8 @@
             right: 0;
             border-radius: 6px;
             position: absolute;
-            background: rgba(48, 37, 14, 0.75);
+            // background: rgba(#438d46, 0.5);
+            // background: linear-gradient(to top, rgba(#438d46, 0.2), #438d46);
         }
         display: inline-block;
         width: 45%;
@@ -247,7 +248,7 @@
         height: 18px;
         width: 18px;
         margin-top: 20px;
-        background-color: #282828;
+        background-color: #517d52;
 
         z-index: -1;
         position: absolute;
@@ -366,7 +367,7 @@
         }
 
         .ag-timeline-card_info {
-            padding: 10px 15px;
+            padding: 10px;
         }
         .ag-timeline-card_desc {
             font-size: 14px;
@@ -385,6 +386,21 @@
     @media (min-width: 980px) and (max-width: 1161px) {
         .ag-format-container {
             width: 960px;
+        }
+    }
+
+    .ag-timeline-card_inner {
+        background: #517d52;
+        border-radius: 6px;
+    }
+
+    .ag-timeline-card_img-box {
+        width: 100%;
+        height: 250px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
