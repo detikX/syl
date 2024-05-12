@@ -40,7 +40,8 @@ function initTimeline() {
                 tl.to(currentSection.querySelectorAll("p"), {
                     opacity: 0,
                     duration: 0.25,
-                    maxHeight: "0%"
+                    maxHeight: "0%",
+                    height: 0
                 }, 0);
             }
             currentSection = section;
@@ -54,7 +55,7 @@ function initTimeline() {
                 }, 0);
                 tl.fromTo(section.querySelectorAll("p"), { maxHeight: "0%" }, {
                     opacity: 1,
-                    maxHeight: "100%"
+                    maxHeight: "0%"
                 });
             }
         }
