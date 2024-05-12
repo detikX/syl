@@ -15,7 +15,7 @@ function initTimeline() {
         toggleClass: 'started',
         pin: true,
         markers: false,
-        end: () => "+=" + ((sections.length - 1) * vh(80)),
+        end: () => "+=" + ((sections.length - 1) * vh(50)),
     });
 
     let currentSection;
