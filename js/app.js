@@ -69,7 +69,7 @@ function initTimeline() {
         ScrollTrigger.create({
             start: () => parentST.start + i * window.innerHeight * 0.4,
             end: () => "+=" + window.innerHeight * 0.4,
-            markers: true,
+            markers: false,
             //onLeaveBack: () => i || goto(null, 0),
             onToggle: self => self.isActive && goto(sct, sct_index)
         });
