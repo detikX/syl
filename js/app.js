@@ -35,7 +35,7 @@ function initTimeline() {
                     fontSize: "2rem",
                 });
                 tl.to(currentSection, {
-                    maxHeight: "3rem"
+                    maxHeight: "3rem",
                 }, 0);
                 tl.to(currentSection.querySelectorAll("p"), {
                     opacity: 0,
