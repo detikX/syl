@@ -328,25 +328,17 @@ section {
 
 #nav.no_index,
 #share {
-    z-index: 19 !important;
+    z-index: 21;
 }
+
 #nav.dark {
-    background: #7c181f !important;
+    background: linear-gradient(45deg, #333, #000) !important;
 }
+
 .footer {
-    z-index: 19;
+    z-index: 22;
 }
-.share_icon {
-    color: white !important;
-    > a {
-        padding: 2px 0 !important;
-        @media screen and (max-width: 768px) {
-            padding: 0 !important;
-            width: 28px;
-            height: 28px;
-        }
-    }
-}
+
 .share_icon > a i {
     font-size: 25px !important;
     line-height: initial !important;
@@ -361,14 +353,15 @@ section {
 #nav {
     // background: rgb(105 84 29 / 80%) !important;
     // background: rgb(80, 80, 80, 0.8) !important;
-    backdrop-filter: blur(11px);
+    // backdrop-filter: blur(11px);
+    background: linear-gradient(45deg, #333, #000) !important;
     @media screen and (max-width: 766px) {
         // backdrop-filter: initial;
         // background: rgb(80, 80, 80, 0.8) !important;
     }
 }
 .bg-blues {
-    background: $colorred !important;
+    background: #eee !important;
 }
 
 .share_icon > a {
@@ -424,7 +417,6 @@ section {
         }
     }
 }
-
 .haha,
 .hahad {
     background: white;
