@@ -1,6 +1,11 @@
 .data {
     // background: #009688;
     // background: #4caf50;
+    .wrap-detikx {
+        @media screen and (max-width: 768px) {
+            margin-top: -50vh;
+        }
+    }
     .syl-img {
         position: absolute;
         bottom: 0;

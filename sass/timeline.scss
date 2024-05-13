@@ -192,7 +192,7 @@
         position: relative;
         margin: -77px 0 0;
         // background-color: #30250e;
-        background: url("../img/kertas.jpg");
+        // background: url("../img/kertas.jpg");
 
         opacity: 0;
 
@@ -403,4 +403,13 @@
             object-fit: cover;
         }
     }
+}
+
+.font-big {
+    font-size: 8rem !important;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
