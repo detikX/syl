@@ -28,7 +28,10 @@
     }
 
     .mb-80 {
-        height: 50vh;
+        height: 40vh;
+        @media screen and (max-width: 768px) {
+            height: 28vh;
+        }
         position: relative;
     }
 }
@@ -51,7 +54,7 @@
 }
 
 .lihat-naskah {
-    background: #7fce82;
+    background: transparent;
     position: relative;
     z-index: 10;
     a  {
