@@ -1,6 +1,24 @@
 .banner {
     background: #7fce82;
     z-index: 14;
+    .family {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        height: auto;
+        width: 35%;
+        filter: grayscale(1) opacity(0.5);
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            transform: translate(-50%, -50%);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     .imagex {
         width: auto;
         height: 80vh;
