@@ -1,5 +1,11 @@
+$(document).ready(function () {
+    AOS.init()
+})
+$(".quotex-awal .wrap-detikx p,.pembukaan .wrap-detikx p").attr({ "data-aos": "fade-in", "data-aos-delay": "200", "data-aos-duration": "500" });
+
 (function ($) {
     $(function () {
+
 
 
         $(window).on('scroll', function () {
@@ -69,3 +75,6 @@
 
     });
 })(jQuery);
+
+
+
