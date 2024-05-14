@@ -362,6 +362,8 @@ section {
 }
 .bg-blues {
     background: #7fce82 !important;
+    position: relative;
+    z-index: 12;
 }
 
 .share_icon > a {
