@@ -84,3 +84,21 @@
         // margin-left: 16px;
     }
 }
+
+.creditx {
+    min-height: auto;
+    border-top: 1px dashed;
+    p {
+        margin-bottom: 0;
+    }
+    .alls {
+        &_name {
+            font-weight: bold;
+        }
+        display: block;
+        &_job,
+        &_name {
+            display: inline-block;
+        }
+    }
+}
